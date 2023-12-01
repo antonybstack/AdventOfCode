@@ -1,4 +1,6 @@
 # Advent of Code 2023
+![.NET Action Workflow Result](https://github.com/antonybstack/AdventOfCode/actions/workflows/test.yml/badge.svg)
+
 Taking part in the [Advent of Code](https://adventofcode.com/) challenge in 2023 for the first time. I will be using C# 12 to solve the puzzles.
 
 ## What is Advent of Code?
