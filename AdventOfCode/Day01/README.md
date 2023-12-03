@@ -37,8 +37,6 @@ produces `_142_`.
 
 Consider your entire calibration document. _What is the sum of all of the calibration values?_
 
-Your puzzle answer was `55017`.
-
 ## \--- Part Two ---
 
 Your calculation isn't quite right. It looks like some of the digits are actually _spelled out with
@@ -60,13 +58,3 @@ In this example, the calibration values are `29`, `83`, `13`, `24`, `42`, `14`, 
 produces `_281_`.
 
 _What is the sum of all of the calibration values?_
-
-Your puzzle answer was `53539`.
-
-Both parts of this puzzle are complete! They provide two gold stars: \*\*
-
-At this point, you should [return to your Advent calendar](https://adventofcode.com/2023) and try another puzzle.
-
-If you still want to see it, you can [get your puzzle input](https://adventofcode.com/2023/day/1/input).
-
-You can also this puzzle.
