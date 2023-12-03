@@ -57,4 +57,51 @@ public sealed class PuzzleTests(PuzzleFixture fixture) : IClassFixture<PuzzleFix
                                                       Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 
                                                       """u8.ToArray();
+
+    [Fact]
+    public void Day02_Part1_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(2);
+        var result = puzzle.Solver.SolvePart1(Day02SampleInput);
+        Assert.Equal(8, result);
+    }
+
+    [Fact]
+    public void Day02_Part1_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(2);
+        var result = puzzle.Solver.SolvePart1(puzzle.Input);
+        Assert.Equal(2486, result);
+    }
+
+    [Fact]
+    public void Day02_Part2_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(2);
+        var result = puzzle.Solver.SolvePart2(Day02SampleInput);
+        Assert.Equal(2286, result);
+    }
+
+    [Fact]
+    public void Day02_Part2_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(2);
+        var result = puzzle.Solver.SolvePart2(puzzle.Input);
+        Assert.Equal(87984, result);
+    }
+
+    private static readonly byte[] Day03SampleInput = """
+                                                      467..114..
+                                                      ...*......
+                                                      ..35..633.
+                                                      ......#...
+                                                      617*......
+                                                      .....+.58.
+                                                      ..592.....
+                                                      ......755.
+                                                      ...$.*....
+                                                      .664.598..
+
+                                                      """u8.ToArray();
+
 }
