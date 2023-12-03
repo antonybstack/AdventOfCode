@@ -27,12 +27,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="Inputs\Day1.txt"/>
-        <Content Include="Inputs\Day1_Part1.txt">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <None Remove="Inputs\Day1_Part2.txt"/>
-        <Content Include="Inputs\Day1_Part2.txt">
+        <None Remove="Inputs\**"/>
+        <Content Include="Inputs\**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
