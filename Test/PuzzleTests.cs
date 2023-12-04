@@ -145,4 +145,73 @@ public sealed class PuzzleTests(PuzzleFixture fixture) : IClassFixture<PuzzleFix
                                                       Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
 
                                                       """u8.ToArray();
+
+    [Fact]
+    public void Day04_Part1_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(4);
+        var result = puzzle.Solver.SolvePart1(Day04SampleInput);
+        Assert.Equal(13, result);
+    }
+
+    [Fact]
+    public void Day04_Part1_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(4);
+        var result = puzzle.Solver.SolvePart1(puzzle.Input);
+        Assert.Equal(25571, result);
+    }
+
+    [Fact]
+    public void Day04_Part2_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(4);
+        var result = puzzle.Solver.SolvePart2(Day04SampleInput);
+        Assert.Equal(30, result);
+    }
+
+    [Fact]
+    public void Day04_Part2_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(4);
+        var result = puzzle.Solver.SolvePart2(puzzle.Input);
+        Assert.Equal(8805731, result);
+    }
+
+    private static readonly byte[] Day05SampleInput = """
+                                                      seeds: 79 14 55 13
+
+                                                      seed-to-soil map:
+                                                      50 98 2
+                                                      52 50 48
+
+                                                      soil-to-fertilizer map:
+                                                      0 15 37
+                                                      37 52 2
+                                                      39 0 15
+
+                                                      fertilizer-to-water map:
+                                                      49 53 8
+                                                      0 11 42
+                                                      42 0 7
+                                                      57 7 4
+
+                                                      water-to-light map:
+                                                      88 18 7
+                                                      18 25 70
+
+                                                      light-to-temperature map:
+                                                      45 77 23
+                                                      81 45 19
+                                                      68 64 13
+
+                                                      temperature-to-humidity map:
+                                                      0 69 1
+                                                      1 0 69
+
+                                                      humidity-to-location map:
+                                                      60 56 37
+                                                      56 93 4
+
+                                                      """u8.ToArray();
 }
