@@ -214,4 +214,36 @@ public sealed class PuzzleTests(PuzzleFixture fixture) : IClassFixture<PuzzleFix
                                                       56 93 4
 
                                                       """u8.ToArray();
+
+    [Fact]
+    public void Day05_Part1_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(5);
+        var result = puzzle.Solver.SolvePart1(Day05SampleInput);
+        Assert.Equal(35, result);
+    }
+
+    [Fact]
+    public void Day05_Part1_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(5);
+        var result = puzzle.Solver.SolvePart1(puzzle.Input);
+        Assert.Equal(111627841, result);
+    }
+
+    [Fact]
+    public void Day05_Part2_Sample()
+    {
+        var puzzle = fixture.GetPuzzleByDay(5);
+        var result = puzzle.Solver.SolvePart2(Day05SampleInput);
+        Assert.Equal(46, result);
+    }
+
+    [Fact]
+    public void Day05_Part2_Puzzle()
+    {
+        var puzzle = fixture.GetPuzzleByDay(5);
+        var result = puzzle.Solver.SolvePart2(puzzle.Input);
+        Assert.Equal(69323688, result);
+    }
 }
